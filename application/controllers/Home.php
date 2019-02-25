@@ -4,7 +4,9 @@ class Home extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model('Home_model');
-		error_reporting(1);
+		error_reporting(0);
+		date_default_timezone_set('Asia/Dhaka');
+
 	}
 
 	public function index(){

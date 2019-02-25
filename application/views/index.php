@@ -49,7 +49,7 @@
 	<nav class="one-page-header one-page-header-style-2 navbar navbar-default navbar-fixed-top architecture-nav one-page-nav-scrolling one-page-nav__fixed" role="navigation">
 		<div class="container">
 			<div class="page-scroll">
-				<a class="logo-link navbar-brand logo-left" href="#intro">
+				<a class="logo-link navbar-brand logo-left" href="<?=site_url()?>">
 					<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
 					<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
 				</a>
@@ -63,7 +63,7 @@
 
 					<div class="col-md-2 no-side-padding">
 						<div class="center-block logo page-scroll">
-							<a class="logo-link navbar-brand logo-centered" href="#intro">
+							<a class="logo-link navbar-brand logo-centered" href="<?=site_url()?>">
 								<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 								<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 							</a>
@@ -111,7 +111,6 @@
 					<div class="arch-service-in img-hover-1 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/Untitled-3-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Health</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Health');">Read More</a></button>
 					</div>
 				</div>
@@ -120,7 +119,6 @@
 					<div class="arch-service-in img-hover-2 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/agriculture-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>>
 						<h3>Agriculture</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Agriculture');">Read More</a></button>
 					</div>
 				</div>
@@ -129,7 +127,6 @@
 					<div class="arch-service-in img-hover-3 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/disability-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>>
 						<h3>Disability</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Disability');">Read More</a></button>
 					</div>
 				</div>
@@ -138,7 +135,6 @@
 					<div class="arch-service-in img-hover-4 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/environment-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Environment</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Environment');">Read More</a></button>
 					</div>
 				</div>
@@ -147,7 +143,6 @@
 					<div class="arch-service-in img-hover-3 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/education-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Education</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Education');">Read More</a></button>
 					</div>
 				</div>
@@ -156,7 +151,6 @@
 					<div class="arch-service-in img-hover-2 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/industry-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Industry</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Industry');">Read More</a></button>
 					</div>
 				</div>
@@ -165,7 +159,6 @@
 					<div class="arch-service-in img-hover-1 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/Untitled-3-01.png" style="height: 35%; width: 35%; color: white;" alt=""></span>
 						<h3>Hill Tracks</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Omom sociis natoque penatibus.</p>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Hill Tracks');">Read More</a></button>
 					</div>
 				</div>
@@ -184,59 +177,39 @@
 						</div>
 					</div>
 
-					<!-- Owl Carousel v4 we create amazing things-->
-					<div class="owl-carousel-v4 owl-theme">
-						<div class="owl-slider-v4">
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/ambulance.jpg" alt="Ambulance">
-							</div>
+					<div class="slideshow-container">
 
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/blindstick.jpg" alt="Blindstick">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/Central Nebulizer-01.jpg" alt="Central Nebulizer">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/CNC-01.jpg" alt="CNC">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/Down hill water to Up Hill-01.jpg" alt="Down hill water to Up Hill">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/fuel_from_poly_plastic-02-01.jpg" alt="Fuel_From_Poly">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/green fertilizer-01.jpg" alt="Green Fertilizer">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/multimedia_classroom-01.jpg" alt="Multimedia Classroom">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/power_tiller-01-01.jpg" alt="Power Tiller">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/solar_tricycle.jpg" alt="Solar Tricycle">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/solar_wheelchair-01.jpg" alt="Solar Wheelchair">
-							</div>
-
-							<div class="item">
-								<img src="<?=base_url()?>assets/img/used cooking oil.jpg" alt="Used Cooking Oil">
-							</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/ambulance.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/blindstick.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/blindstick (1).jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/infant-incubator.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/fuel_from_poly_plastic-01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/green fertilizer-01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/power_tiller.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="<?=base_url()?>assets/img/solar_wheelchair.jpg" style="width:100%">
 						</div>
 					</div>
-					<!-- End Owl Carousel v4 -->
+					<br>
+					<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+					</div>
 				</div>
 			</div>
 		</section>
@@ -271,8 +244,8 @@
 						<!-- awards -->
 						<div class="col-md-6 g-heading-v7 text-center">
 							<h2 class="h2 g-color-white g-mb-30"><em class="block-name">Who we are</em> About iLab</h2>
-							<p class="g-mb-30">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</p>
-							<p> Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.Etiam rhoncus.</p>
+							<p class="g-mb-30">Innovation Lab is a specialized lab where young generation, technicians, researchers, teachers and students can do all kinds of research to implement their innovative ideas and get all the help.</p>
+							<p> The main purpose of Innovation Lab is to promote innovative work, to increase the technology of technology by integrating technology-driven people, implement innovative concepts and projects to ensure faster and easier service to the citizen, reduce public welfare and enrich domestic technology.</p>
 						</div>
 					</div>
 				</div>
@@ -397,6 +370,7 @@
 		<script src="<?=base_url()?>assets/js/plugins/cube-portfolio-lightbox.js"></script>
 		<script src="<?=base_url()?>assets/js/plugins/promo.js"></script>
 		<script src="<?=base_url()?>assets/js/forms/contact.js"></script>
+
 		<script>
 			$(function() {
 				App.init();
@@ -404,34 +378,55 @@
 				ContactForm.initContactForm();
 				changeProduct('Education');
 			});
-		</script>
 
-		<script >
-			function changeProduct(category){
-				console.log(category);
-				$('#category_name').html(category);;
-				if (category) {
-					$.ajax({
-						url : "<?=site_url('home/load_product');?>",
-						method: 'post',
-						data: {"category": category},            
-						success : function(response){
-							if (response != 0) {
-								$('#products_list').html(response);
+			var slideIndex = 0;
+			showSlides();
 
-							}else{
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+					setTimeout(showSlides, 2000);
+				}
+			</script>
+
+			<script >
+				function changeProduct(category){
+					console.log(category);
+					$('#category_name').html(category);;
+					if (category) {
+						$.ajax({
+							url : "<?=site_url('home/load_product');?>",
+							method: 'post',
+							data: {"category": category},            
+							success : function(response){
+								if (response != 0) {
+									$('#products_list').html(response);
+
+								}else{
+									$('#products_list').html('');
 								//alert('Something went wrong!');
 							}
 
 						}  
 					});
-				}
-				else{
-					alert('Something went wrong!');
-				}
+					}
+					else{
+						alert('Something went wrong!');
+					}
 
-			}
-		</script>
+				}
+			</script>
 
-	</body>
-	</html>
+		</body>
+		</html>
