@@ -40,5 +40,13 @@ class Products_admin_model extends CI_Model {
         return $result;
     }
 
+    /************************orders models function***************************/
+    function get_orders_lists() {
+        $this->db->join('products', 'orders.product_id = products.product_id', 'inner');
+        $this->db->order_by('orders.created_at', 'DESC');
+        $query = $this->db->get('orders');
+        $result = $query->result();
+        return $result;
+    }
 
 }

@@ -233,5 +233,14 @@ class Products_admin extends CI_Controller {
 		}
 	}
 
-
+	/***********************orders function**************************/
+	function orders() {
+		if ($this->session->userdata('admin_id')) {
+			$data['results'] = $this->Products_admin_model->get_orders_lists();
+			$this->load->view('admin/orders/orders_view', $data);
+		} else {
+			redirect('admin/login');
+		}
+	}
+	
 }
