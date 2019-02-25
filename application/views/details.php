@@ -50,8 +50,8 @@
 		<div class="container">
 			<div class="page-scroll">
 				<a class="logo-link navbar-brand logo-left" href="#intro">
-					<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
-					<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
+					<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
+					<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 				</a>
 			</div>
 
@@ -64,8 +64,8 @@
 					<div class="col-md-2 no-side-padding">
 						<div class="center-block logo page-scroll">
 							<a class="logo-link navbar-brand logo-centered" href="index.php">
-								<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
-								<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
+								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
+								<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 							</a>
 						</div>
 					</div>
@@ -201,6 +201,21 @@
 		</div>
 	</div>
 </div>
+
+<!-- copyrights -->
+<div class="copyrights container-fluid page-scroll">
+	<div clas="container">
+		<a class="footer-logo" href="#intro">
+			<img class="img-responsive" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
+		</a>
+		<ul class="list-inline footer-list">
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+	</div>
+</div>
+
 
 
 <!-- JS Global Compulsory -->
