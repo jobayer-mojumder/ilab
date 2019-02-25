@@ -90,7 +90,7 @@
                 <div class="col-xs-12">
                     <div class="text text-right" >
 
-                        <p><font color="red">Forget Your Password ?</font> <?=anchor('login/pass_re/','Click Here').$this->access_level ?></p>
+                        <p><font color="red">Forgot Your Password ?</font> <?=anchor('login/pass_re/','Click Here').$this->access_level ?></p>
                         <p><a href="<?=base_url();?>">Go to Home Page</a></p>
                     </div>
                 </div>
