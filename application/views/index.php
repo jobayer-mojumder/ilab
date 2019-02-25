@@ -63,8 +63,8 @@
 					<div class="col-md-2 no-side-padding">
 						<div class="center-block logo page-scroll">
 							<a class="logo-link navbar-brand logo-centered" href="<?=site_url()?>">
-								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
-								<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
+								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -10px; padding: 0px;">
+								<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -10px; padding: 0px;">
 							</a>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 					<div class="arch-service-in img-hover-1 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/health-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Health</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Health');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Health');">Show products</a></button>
 					</div>
 				</div>
 
@@ -111,7 +111,7 @@
 					<div class="arch-service-in img-hover-2 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/agriculture-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Agriculture</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Agriculture');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Agriculture');">Show products</a></button>
 					</div>
 				</div>
 
@@ -119,7 +119,7 @@
 					<div class="arch-service-in img-hover-3 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/disability-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Disability</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Disability');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Disability');">Show products</a></button>
 					</div>
 				</div>
 
@@ -127,7 +127,7 @@
 					<div class="arch-service-in img-hover-4 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/environment-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Environment</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Environment');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Environment');">Show products</a></button>
 					</div>
 				</div>
 
@@ -135,7 +135,7 @@
 					<div class="arch-service-in img-hover-1 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/ekshop-logo.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Ek-Shop</h3>
-						<button class="arch-service-btn"><a href="https://www.youtube.com/">Read More</a></button>
+						<a href="http://ekshop.gov.bd/"><button class="arch-service-btn">View</button></a>
 					</div>
 				</div>
 
@@ -143,7 +143,7 @@
 					<div class="arch-service-in img-hover-3 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/education-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Education</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Education');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Education');">Show products</a></button>
 					</div>
 				</div>
 
@@ -151,7 +151,7 @@
 					<div class="arch-service-in img-hover-2 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/industry-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Industry</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Industry');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Industry');">Show products</a></button>
 					</div>
 				</div>
 
@@ -159,7 +159,7 @@
 					<div class="arch-service-in img-hover-1 equal-height-column">
 						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/hill-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Hill Tracts</h3>
-						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Hill Tracks');">Read More</a></button>
+						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Hill Tracks');">Show products</a></button>
 					</div>
 				</div>
 			</div>
@@ -185,17 +185,21 @@
 									<li class="rounded-x active" data-target="#myCarousel" data-slide-to="0" ></li>
 									<li class="rounded-x" data-target="#myCarousel" data-slide-to="1"></li>
 									<li class="rounded-x" data-target="#myCarousel" data-slide-to="2"></li>
+									<li class="rounded-x" data-target="#myCarousel" data-slide-to="3"></li>
 								</ol>
 
 								<div class="carousel-inner">
 									<div class="item active">
-										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-seo.jpg" alt="">
+										<img class="img-responsive" src="<?=base_url()?>assets/img/ambulanceSS.jpg" alt="">
 									</div>
 									<div class="item">
-										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-web-design.jpg" alt="">
+										<img class="img-responsive" src="<?=base_url()?>assets/img/telemedicineSS.jpg" alt="">
 									</div>
 									<div class="item">
-										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-web-design.jpg" alt="">
+										<img class="img-responsive" src="<?=base_url()?>assets/img/infant_incubatorSS.jpg" alt="">
+									</div>
+									<div class="item">
+										<img class="img-responsive" src="<?=base_url()?>assets/img/blindstickSS.jpg" alt="">
 									</div>
 								</div>
 
@@ -343,9 +347,9 @@
 						<img class="img-responsive" src="assets/img/logo.png" alt="Logo">
 					</a>
 					<ul class="list-inline footer-list">
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="http://ilab.gov.bd/"><i class="fa fa-globe"></i></a></li>
+						<li><a href="https://www.facebook.com/a2ilab/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UC5zxvzsVFvKfaCpJO66-Hug/featured"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -401,7 +405,7 @@
 					}
 					slides[slideIndex-1].style.display = "block";  
 					dots[slideIndex-1].className += " active";
-					setTimeout(showSlides, 2000);
+					setTimeout(showSlides, 1000);
 				}
 			</script>
 

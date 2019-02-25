@@ -870,6 +870,7 @@ p {
 }
 
 .card {
+	background: rgba(178, 190, 195,0.7); 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -1528,7 +1529,7 @@ p {
 
 .form .form-control {
 	border: none;
-	background: #f5f5f5;
+	background: rgba(178, 190, 195,0.6);
 	border-radius: 2px;
 }
 
