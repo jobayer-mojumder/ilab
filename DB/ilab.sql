@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 24, 2019 at 09:31 PM
+-- Generation Time: Feb 25, 2019 at 02:03 PM
 -- Server version: 5.7.25-0ubuntu0.18.04.2
--- PHP Version: 5.6.40-1+ubuntu18.04.1+deb.sury.org+1
+-- PHP Version: 7.1.26-1+ubuntu18.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -86,7 +86,8 @@ CREATE TABLE `admin_login_history` (
 --
 
 INSERT INTO `admin_login_history` (`id`, `ip`, `created_at`, `username`, `browser`, `version`, `platform`, `status`) VALUES
-(1, '::1', '2019-02-24 20:31:42', 'admin', 'Chrome', '72.0.3626.109', 'Linux', 1);
+(1, '::1', '2019-02-24 20:31:42', 'admin', 'Chrome', '72.0.3626.109', 'Linux', 1),
+(2, '::1', '2019-02-25 13:19:58', 'admin', 'Chrome', '72.0.3626.119', 'Linux', 1);
 
 -- --------------------------------------------------------
 
@@ -136,7 +137,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_category`, `product_name`, `product_description`, `product_image1`, `product_image2`, `product_video`, `product_innovator_image`, `product_innovator_name`, `product_cost_tk`, `product_cost_doller`, `status`, `path`, `created_at`, `updated_at`) VALUES
-(5, 'Education', 'hello', 'dadasda', 'tenor.gif', 'MMD-103005.jpg', 'vifdeo url', '1482762477_700574831.jpg', 'joabyer', '13', '54', 1, './assets/product/', '2019-02-24 21:16:12', '2019-02-24 21:19:47');
+(6, 'Education', 'hello', '(1) The original question was about scaling based on a browser window size. (2) Elements like div get their own height from their own content, or take available space in a flexbox model. Saying that without explicit width/height the container won\'t show at all is incorrect. Obviously, if you want to display an empty div with a background image, you will need to set the height and, possibly, width, but then you will see only a part of an image, unless the aspect ratio is exactly the same as of the image itself.', 'imageedit_1_8667875941.png', '1482762477_700574831.jpg', 'https://www.youtube.com/embed/ZHKIs2CPEk4', 'MMD-103005.jpg', 'Jobayer Mojumder', '13', '54', 1, './assets/product/', '2019-02-25 13:21:12', '2019-02-25 13:24:42');
 
 --
 -- Indexes for dumped tables
@@ -191,17 +192,17 @@ ALTER TABLE `admin_group`
 -- AUTO_INCREMENT for table `admin_login_history`
 --
 ALTER TABLE `admin_login_history`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `form_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `form_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
