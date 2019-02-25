@@ -104,7 +104,7 @@
 					<h3><?=$results->product_name?></h3>
 					<p><b>Description: </b><?=$results->product_description?></p>
 					<p><b>Category: </b><?=$results->product_category?></p>
-					<p><b>Price: </b><?=$results->product_cost_tk?> tk( $<?=$results->product_cost_doller?>)</p>
+					<p><b>Price: </b><?=$results->product_cost_tk?> tk ($<?=$results->product_cost_doller?>)</p>
 					<br><br>
 					<a href="#" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal" class="text-center">Adopt</a>
 				</div>
@@ -121,7 +121,7 @@
 
 				<div class="col-md-5 col-sm-5">
 					<p><b>Innovator name: </b><?=$results->product_innovator_name?></p>
-					<img src="<?=base_url($results->path.$results->product_innovator_image)?>" alt="" class="img-responsive" >
+					<img src="<?=base_url($results->path.$results->product_innovator_image)?>" alt="" class="img-responsive" style=" max-height: 285px;">
 				</div>
 
 			</div>
