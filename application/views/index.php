@@ -63,8 +63,8 @@
 					<div class="col-md-2 no-side-padding">
 						<div class="center-block logo page-scroll">
 							<a class="logo-link navbar-brand logo-centered" href="<?=site_url()?>">
-								<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
-								<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
+								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
+								<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 							</a>
 						</div>
 					</div>
@@ -83,8 +83,8 @@
 	<section class="promo-section" id="intro" style="height: 450px;">
 		<div class="breadcrumbs-v3 img-v3 text-center">
 			<div class="container">
-				<h1>Unify is a clean and fully responsive</h1>
-				<p>Discover more about us</p>
+				<h1>Welcome to the world of Innovation...</h1>
+				<!-- <p>Discover more about us</p> -->
 			</div><!--/end container-->
 		</div>
 	</section>
@@ -101,7 +101,7 @@
 			<div class="row equal-height-columns">
 				<div class="col-md-3 arch-service arch-service-1">
 					<div class="arch-service-in img-hover-1 equal-height-column">
-						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/Untitled-3-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
+						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/health-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Health</h3>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Health');">Read More</a></button>
 					</div>
@@ -149,7 +149,7 @@
 
 				<div class="col-md-4 arch-service arch-service-4">
 					<div class="arch-service-in img-hover-1 equal-height-column">
-						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/Untitled-3-01.png" style="height: 35%; width: 35%; color: white;" alt=""></span>
+						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/hill-01.png" style="height: 35%; width: 35%; color: white;" alt=""></span>
 						<h3>Hill Tracks</h3>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Hill Tracks');">Read More</a></button>
 					</div>
@@ -332,7 +332,7 @@
 			<div class="copyrights container-fluid page-scroll">
 				<div clas="container">
 					<a class="footer-logo" href="#intro">
-						<img class="img-responsive" src="assets/img/ilab-logo.png" alt="Logo">
+						<img class="img-responsive" src="assets/img/logo.png" alt="Logo">
 					</a>
 					<ul class="list-inline footer-list">
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
