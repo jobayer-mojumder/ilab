@@ -83,8 +83,8 @@
 	<section class="promo-section" id="intro" style="height: 450px;">
 		<div class="breadcrumbs-v3 img-v3 text-center">
 			<div class="container">
-				<h1>Unify is a clean and fully responsive</h1>
-				<p>Discover more about us</p>
+				<h1>Welcome to the world of Innovation...</h1>
+				<!-- <p>Discover more about us</p> -->
 			</div><!--/end container-->
 		</div>
 	</section>
