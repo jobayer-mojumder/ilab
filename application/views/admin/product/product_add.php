@@ -55,7 +55,7 @@
 												<option value="Agriculture">Agriculture</option>
 												<option value="Industry">Industry</option>
 												<option value="Hill track">Hill track</option>
-												<option value="Ekshop">Ekshop</option>
+												<option value="Ek-Shop">Ek-Shop</option>
 											</select>
 										</div>
 									</div>
