@@ -1,0 +1,414 @@
+/*
+ * Template Name: Unify - Responsive Bootstrap Template
+ * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
+ * Version: 1.9.2
+ * Author: @htmlstream
+ * Website: http://htmlstream.com
+*/
+
+/*Import Global Compulsory CSS Files*/
+@import url(app.css);
+@import url(blocks.css);
+
+/*Import CSS Plugins*/
+/*@import url(plugins/style-switcher.css);
+*/
+
+@font-face {
+font-family:"Century Gothic";
+src:url(../fonts/Century Gothic.ttf);
+src:url(../fonts/GOTHICB.TTF) format("True Type Outlines")
+}
+@font-face {
+font-family:"TD Graphik Medium";
+src:url(../fonts/TDGraphik-Medium-Web.eot);
+src:url(../fonts/TDGraphik-Medium-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-Medium-Web.woff2) format("woff2"), url(../fonts/TDGraphik-Medium-Web.woff) format("woff")
+}
+@font-face {
+font-family:"TD Graphik SemiLight";
+src:url(../fonts/TDGraphik-Semilight-Web.eot);
+src:url(../fonts/TDGraphik-Semilight-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-Semilight-Web.woff2) format("woff2"), url(../fonts/TDGraphik-Semilight-Web.woff) format("woff")
+}
+@font-face {
+font-family:"TD Graphik Light";
+src:url(../fonts/TDGraphik-Light-Web.eot);
+src:url(../fonts/TDGraphik-Light-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-Light-Web.woff2) format("woff2"), url(../fonts/TDGraphik-Light-Web.woff) format("woff")
+}
+@font-face {
+font-family:"TD Graphik Medium Italic";
+src:url(../fonts/TDGraphik-MediumItalic-Web.eot);
+src:url(../fonts/TDGraphik-MediumItalic-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-MediumItalic-Web.woff2) format("woff2"), url(../fonts/TDGraphik-MediumItalic-Web.woff) format("woff")
+}
+@font-face {
+font-family:"TD Graphik SemiLight Italic";
+src:url(../fonts/TDGraphik-SemilightItalic-Web.eot);
+src:url(../fonts/TDGraphik-SemilightItalic-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-SemilightItalic-Web.woff2) format("woff2"), url(../fonts/TDGraphik-SemilightItalic-Web.woff) format("woff")
+}
+@font-face {
+font-family:"TD Graphik Light Italic";
+src:url(../fonts/TDGraphik-LightItalic-Web.eot);
+src:url(../fonts/TDGraphik-LightItalic-Webd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/TDGraphik-LightItalic-Web.woff2) format("woff2"), url(../fonts/TDGraphik-LightItalic-Web.woff) format("woff")
+}
+@font-face {
+font-family:"Webly Sleek";
+src:url(../fonts/weblysleekuil-webfont.eot);
+src:url(../fonts/weblysleekuil-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+font-weight:300;
+font-style:normal
+}
+@font-face {
+font-family:"Webly Sleek Light";
+src:url(../fonts/weblysleekuil-webfont.eot);
+src:url(../fonts/weblysleekuil-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuil-webfont.woff2) format("woff2"), url(../fonts/weblysleekuil-webfont.woff) format("woff"), url(../fonts/weblysleekuil-webfont.ttf) format("truetype"), url(../fonts/weblysleekuil-webfont.svg#weblysleek_uilight) format("svg");
+font-weight:100;
+font-style:normal
+}
+@font-face {
+font-family:"Webly Sleek Italic";
+src:url(../fonts/weblysleekuili-webfont.eot);
+src:url(../fonts/weblysleekuili-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuili-webfont.woff2) format("woff2"), url(../fonts/weblysleekuili-webfont.woff) format("woff"), url(../fonts/weblysleekuili-webfont.ttf) format("truetype"), url(../fonts/weblysleekuili-webfont.svg#weblysleek_uilight_italic) format("svg");
+font-weight:300;
+font-style:italic
+}
+@font-face {
+font-family:"Webly Sleek SemiBold";
+src:url(../fonts/weblysleekuisb-webfont.eot);
+src:url(../fonts/weblysleekuisb-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisb-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisb-webfont.woff) format("woff"), url(../fonts/weblysleekuisb-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisb-webfont.svg#weblysleek_uisemibold) format("svg");
+font-weight:700;
+font-style:normal
+}
+@font-face {
+font-family:"Webly Sleek Semibold Italic";
+src:url(../fonts/weblysleekuisbi-webfont.eot);
+src:url(../fonts/weblysleekuisbi-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisbi-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisbi-webfont.woff) format("woff"), url(../fonts/weblysleekuisbi-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisbi-webfont.svg#weblysleek_uisemibold_italic) format("svg");
+font-weight:700;
+font-style:italic
+}
+@font-face {
+font-family:"Webly Sleek SemiLight";
+src:url(../fonts/weblysleekuisl-webfont.eot);
+src:url(../fonts/weblysleekuisl-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisl-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisl-webfont.woff) format("woff"), url(../fonts/weblysleekuisl-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisl-webfont.svg#weblysleek_uisemilight) format("svg");
+font-weight:400;
+font-style:normal
+}
+@font-face {
+font-family:"Webly Sleek SemiLight Italic";
+src:url(../fonts/weblysleekuisli-webfont.eot);
+src:url(../fonts/weblysleekuisli-webfontd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/weblysleekuisli-webfont.woff2) format("woff2"), url(../fonts/weblysleekuisli-webfont.woff) format("woff"), url(../fonts/weblysleekuisli-webfont.ttf) format("truetype"), url(../fonts/weblysleekuisli-webfont.svg#weblysleek_uisemilight_italic) format("svg");
+font-weight:400;
+font-style:italic
+}
+html {
+overflow-x:hidden;
+}
+body {
+	
+	font-family:"Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+	font-size:15px;
+}
+ol, ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.wrapper{background: #fff;}
+
+body.header-fixed-space {
+  padding-top: 94px;
+}
+body.header-fixed-space-v2 {
+	padding-top: 110px;
+}
+
+@media (max-width: 991px) {
+	body.header-fixed-space,
+	body.header-fixed-space-v2 {
+		padding-top: 0;
+	}
+}
+
+p,
+li,
+li a,
+label {
+ color: #555;
+}
+
+a {
+ color: #fff;
+ text-decoration: none;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+button,
+button:hover {
+	outline: 0 !important;
+}
+
+a:focus {
+text-decoration: none;
+}
+a:hover {
+ color: #000;
+ text-decoration: none;
+}
+
+/*Boxed Layout
+------------------------------------*/
+
+/* ---------- Padding  --------- */
+.p-l{
+  padding-left: 20px;
+}
+.p-0{
+  padding: 0;
+
+}
+.p-10{padding:15px !important;}
+.p-t-10 {
+	padding-top:10px;
+}
+.p-b-10 {
+	padding-bottom:10px;
+}
+.p-t-15 {
+	padding-top:15px;
+}
+.p-b-15 {
+	padding-bottom:15px;
+}
+.p-t-20 {
+	padding-top:20px;
+}
+.p-b-20 {
+	padding-bottom:20px;
+}
+.p-t-25 {
+	padding-top:25px;
+}
+.p-b-25 {
+	padding-bottom:25px;
+}
+.p-t-30 {
+	padding-top:30px;
+}
+.p-b-30 {
+	padding-bottom:30px;
+}
+.p-t-35 {
+	padding-top:35px;
+}
+.p-b-35 {
+	padding-bottom:35px;
+}
+.p-t-40 {
+	padding-top:40px;
+}
+.p-b-40 {
+	padding-bottom:40px;
+}
+.p-t-45 {
+	padding-top:45px;
+}
+.p-b-45 {
+	padding-bottom:45px;
+}
+.p-t-50 {
+	padding-top:50px;
+}
+.p-b-50 {
+	padding-bottom:50px;
+}
+.p-t-55 {
+	padding-top:55px;
+}
+.p-b-55 {
+	padding-bottom:55px;
+}
+.p-t-60 {
+	padding-top:60px;
+}
+.p-b-60 {
+	padding-bottom:60px;
+}
+.p-t-65 {
+	padding-top:65px;
+}
+.p-b-65 {
+	padding-bottom:65px;
+}
+.p-t-70 {
+	padding-top:70px;
+}
+.p-b-70 {
+	padding-bottom:70px;
+}
+.p-t-75 {
+	padding-top:75px;
+}
+.p-b-75 {
+	padding-bottom:75px;
+}
+.p-t-80 {
+	padding-top:80px;
+}
+.p-b-80 {
+	padding-bottom:80px;
+}
+.p-t-85 {
+	padding-top:85px;
+}
+.p-b-85 {
+	padding-bottom:85px;
+}
+.p-t-90 {
+	padding-top:90px;
+}
+.p-b-90 {
+	padding-bottom:90px;
+}
+.p-t-100 {
+	padding-top:100px;
+}
+.p-b-100 {
+	padding-bottom:100px;
+}
+/* ---------- Margin --------- */
+.margin-top-65{
+	margin-top: -65px;
+}
+.m-t-10 {
+	margin-top:10px;
+}
+.m-b-10 {
+	margin-bottom:10px;
+}
+.m-t-15 {
+	margin-top:15px;
+}
+.m-b-15 {
+	margin-bottom:15px;
+}
+.m-t-20 {
+	margin-top:20px;
+}
+.m-b-20 {
+	margin-bottom:20px;
+}
+.m-t-25 {
+	margin-top:25px;
+}
+.m-b-25 {
+	margin-bottom:25px;
+}
+.m-t-30 {
+	margin-top:30px;
+}
+.m-b-30 {
+	margin-bottom:30px;
+}
+.m-t-35 {
+	margin-top:35px;
+}
+.m-b-35 {
+	margin-bottom:35px;
+}
+.m-t-40 {
+	margin-top:40px;
+}
+.m-b-40 {
+	margin-bottom:40px;
+}
+.m-t-45 {
+	margin-top:45px;
+}
+.m-b-45 {
+	margin-bottom:45px;
+}
+.m-t-50 {
+	margin-top:50px;
+}
+.m-b-50 {
+	margin-bottom:50px;
+}
+.m-t-55 {
+	margin-top:55px;
+}
+.m-b-55 {
+	margin-bottom:55px;
+}
+.m-t-60 {
+	margin-top:60px;
+}
+.m-b-60 {
+	margin-bottom:60px;
+}
+.m-t-65 {
+	margin-top:65px;
+}
+.m-b-65 {
+	margin-bottom:65px;
+}
+.m-t-70 {
+	margin-top:70px;
+}
+.m-b-70 {
+	margin-bottom:70px;
+}
+.m-t-75 {
+	margin-top:75px;
+}
+.m-b-75 {
+	margin-bottom:75px;
+}
+.m-t-80 {
+	margin-top:80px;
+}
+.m-b-80 {
+	margin-bottom:80px;
+}
+.m-t-85 {
+	margin-top:85px;
+}
+.m-b-85 {
+	margin-bottom:85px;
+}
+.m-t-90 {
+	margin-top:90px;
+}
+.m-b-90 {
+	margin-bottom:90px;
+}
+.m-t-100 {
+	margin-top:100px;
+}
+.m-b-100 {
+	margin-bottom:100px;
+}
+.m-t-110 {
+	margin-top:110px;
+}
+.m-b-110 {
+	margin-bottom:110px;
+}
+
+
+.wrapper {
+	background: #fff;
+}
+
+.boxed-layout {
+  padding: 0;
+  box-shadow: 0 0 5px #ccc;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: url(../img/patterns/15.png) repeat;
+}
+
+/*Hiding arrows for select field in IE*/
+select::-ms-expand {
+  display: none;
+}

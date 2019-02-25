@@ -1,0 +1,38 @@
+.tg-widgettitle {
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+	background: #515151;
+	border-radius: 4px 4px 0 0;
+	text-align: center;
+}
+
+.tg-widgettitle > h3 {
+	color: white;
+}
+
+#Map-section{
+	padding-top: 25px;
+}
+
+#sidelist {
+	margin: 15px 0px 0px 0px;
+	height: 30em;
+	overflow: scroll;
+	overflow-x: hidden
+}
+#sidelist>li {
+	float: left;
+	line-height: inherit;
+	list-style-type: none;
+	padding: 10px 0;
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+
+.tg-bglight {
+	background: #FFFFFF;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+	padding: 8px;
+}
