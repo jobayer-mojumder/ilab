@@ -97,10 +97,10 @@
 
 
 			<div class="row well">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-4">
 					<img src="<?=base_url($results->path.$results->product_image1)?>" class="img-responsive product-image">
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-8 col-sm-8">
 					<h3><?=$results->product_name?></h3>
 					<p><b>Description: </b><?=$results->product_description?></p>
 					<p><b>Category: </b><?=$results->product_category?></p>
@@ -108,21 +108,22 @@
 					<br><br>
 					<a href="#" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal" class="text-center">Adopt</a>
 				</div>
-				<div class="col-md-12" style="text-align: center; margin-top: 20px;">
-					<iframe width="500" height="300"src="<?=$results->product_video?>"></iframe>
-				</div>
+				
 			</div>
 
 			<div class="row well">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-7 col-sm-7">
+					<div class="col-md-12" style="text-align: center; margin-top: 20px;">
+						<!-- <p><b>Product Video</b></p> -->
+						<iframe width="600" height="300"src="<?=$results->product_video?>"></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-5 col-sm-5">
 					<p><b>Innovator name: </b><?=$results->product_innovator_name?></p>
+					<img src="<?=base_url($results->path.$results->product_innovator_image)?>" alt="" class="img-responsive" >
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<img src="" alt="" class="img-responsive">
-				</div>
-				<div class="col-md-12" style="text-align: center; margin-top: 20px;">
-					<iframe width="500" height="300"src="<?=$results->product_video?>"></iframe>
-				</div>
+
 			</div>
 		</div>
 	</section>
