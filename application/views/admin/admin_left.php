@@ -15,7 +15,9 @@
             </ul>
         </li>
 
-        <li class="<?php echo substr($this->uri->segment(1) , 0, 14) == 'products_admin' ? 'active' : '' ?>"><a href="<?=site_url('products_admin/product')?>"><i class="fa fa-lock"></i> <span>Products</span></a></li>
+        <li class="<?php echo substr($this->uri->segment(2) , 0, 14) == 'products' ? 'active' : '' ?>"><a href="<?=site_url('products_admin/product')?>"><i class="fa fa-lock"></i> <span>Products</span></a></li>
+
+        <li class="<?php echo substr($this->uri->segment(2) , 0, 14) == 'orders' ? 'active' : '' ?>"><a href="<?=site_url('products_admin/orders')?>"><i class="fa fa-lock"></i> <span>Orders</span></a></li>
 
 
     </ul>
