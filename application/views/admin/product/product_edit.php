@@ -64,7 +64,7 @@
 
 												<option <?php if($results->product_category=='Hill track') echo "selected";?>  value="Hill track">Hill track</option>
 
-												<option <?php if($results->product_category=='Ekshop') echo "selected";?>  value="Ekshop">Ekshop</option>
+												<option <?php if($results->product_category=='Ek-Shop') echo "selected";?>  value="Ekshop">Ek-Shop</option>
 											</select>
 										</div>
 									</div>
