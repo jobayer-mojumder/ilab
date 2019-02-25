@@ -77,11 +77,7 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
-<<<<<<< HEAD
 	'password' => 'intern',
-=======
-	'password' => '',
->>>>>>> 5ff26938165840cdac8caf3593e54f9c25e5c0b3
 	'database' => 'ilab',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
