@@ -109,7 +109,7 @@
 
 				<div class="col-md-3 arch-service arch-service-2">
 					<div class="arch-service-in img-hover-2 equal-height-column">
-						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/agriculture-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>>
+						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/agriculture-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Agriculture</h3>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Agriculture');">Read More</a></button>
 					</div>
@@ -117,7 +117,7 @@
 
 				<div class="col-md-3 arch-service arch-service-3">
 					<div class="arch-service-in img-hover-3 equal-height-column">
-						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/disability-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>>
+						<span aria-hidden="true"><img src="<?=base_url()?>assets/img/disability-01.png" style="height: 25%; width: 30%; color: white;" alt=""></span>
 						<h3>Disability</h3>
 						<button class="arch-service-btn"><a href="#projects" onclick="changeProduct('Disability');">Read More</a></button>
 					</div>

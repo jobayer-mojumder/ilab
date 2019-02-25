@@ -56,8 +56,7 @@ class Home extends CI_Controller {
 		$result = $this->Home_model->order_insert($postdata);
 
 		if($result){
-			$add = trim($postdata['form_user_email']);
-			$subject = "ilab Product order confirmation";
+
 			$message = "
 			<html>
 			<head>
@@ -74,11 +73,30 @@ class Home extends CI_Controller {
 			</div>
 			</body>
 			</html>";
-			$headers = 'MIME-Version: 1.0' . "\r\n";
-			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-			$headers .= 'To: info <info@example.com>' . "\r\n";
-			$headers .= 'From:it@mblbd.com ' . "\r\n";
-			if (mail($add, $subject, $message, $headers)) {
+
+			$config = array(
+				'protocol'  => 'smtp',
+				'smtp_host' => 'ssl://smtp.example.com',
+				'smtp_port' => 465,
+				'smtp_user' => 'ekshop.a2i@gmail.com',
+				'smtp_pass' => 'jiisunseerat',
+				'mailtype'  => 'html',
+				'charset'   => 'utf-8'
+			);
+			$this->email->initialize($config);
+			$this->email->set_mailtype("html");
+			$this->email->set_newline("\r\n");
+
+			$htmlContent = '<h1>Sending email via SMTP server</h1>';
+			$htmlContent .= '<p>This email has sent via SMTP server from CodeIgniter application.</p>';
+
+			$this->email->to(trim($postdata['form_user_email']));
+			$this->email->from('ekshop.a2i@gmail.com','ilab');
+			$this->email->subject('ilab Product order confirmation');
+			$this->email->message($htmlContent);
+
+			
+			if ($this->email->send()) {
 				$this->session->set_flashdata('smsg', 'Please check your email.');
 				redirect('home/details/'.$id);
 			} else {
