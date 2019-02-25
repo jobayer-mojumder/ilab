@@ -49,8 +49,8 @@
 		<div class="container">
 			<div class="page-scroll">
 				<a class="logo-link navbar-brand logo-left" href="<?=site_url()?>">
-					<img class="default-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
-					<img class="shrink-logo" src="<?=base_url()?>assets/img/ilab-logo.png" alt="Logo">
+					<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
+					<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 				</a>
 			</div>
 

@@ -1,3 +1,8 @@
 #products_list{
 	padding: 0px 30px;
 }
+
+#projects, #about, #contact {
+	background: url('../img/06.jpg');
+}
+
