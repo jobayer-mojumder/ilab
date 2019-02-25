@@ -22,7 +22,7 @@ class Login extends CI_Controller
         }
     }
 
-    public function pass_re($msg){
+    public function pass_re(){
         if (empty($_POST)) {
             $data['msg'] = $msg;
             $data['url'] = site_url('login/pass_re_ins/');
