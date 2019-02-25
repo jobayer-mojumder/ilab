@@ -97,21 +97,31 @@
 
 
 			<div class="row well">
-				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<img src="<?=base_url($results->path.$results->product_image1)?>" class="img-responsive product-image">
 				</div>
-				<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<h3><?=$results->product_name?></h3>
-					<p><?=$results->product_description?></p>
-					<p><b>category: </b><?=$results->product_category?></p>
-					<p><b>Innovator name: </b><?=$results->product_innovator_name?></p>
+					<p><b>Description: </b><?=$results->product_description?></p>
+					<p><b>Category: </b><?=$results->product_category?></p>
 					<p><b>Price: </b><?=$results->product_cost_tk?> tk( $<?=$results->product_cost_doller?>)</p>
 					<br><br>
-					<a href="#" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal">Adopt</a>
+					<a href="#" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal" class="text-center">Adopt</a>
 				</div>
 				<div class="col-md-12" style="text-align: center; margin-top: 20px;">
 					<iframe width="500" height="300"src="<?=$results->product_video?>"></iframe>
+				</div>
+			</div>
 
+			<div class="row well">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<p><b>Innovator name: </b><?=$results->product_innovator_name?></p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<img src="" alt="" class="img-responsive">
+				</div>
+				<div class="col-md-12" style="text-align: center; margin-top: 20px;">
+					<iframe width="500" height="300"src="<?=$results->product_video?>"></iframe>
 				</div>
 			</div>
 		</div>
