@@ -140,42 +140,42 @@
 					<form class="form-horizontal" method="post" action="<?=site_url('home/order_submit')?>">
 						<div class="form-group">
 							<div class="col-sm-12">
-								<input type="hidden"  class="form-control" id="product_id" name="product_id" value="<?=$results->product_id?>">
+								<input type="hidden"  class="form-control" id="product_id" name="product_id" value="<?=$results->product_id?>" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="form_user_name">User name</label>
+							<label class="control-label col-sm-3" for="form_user_name">Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="form_user_name" name="form_user_name">
+								<input type="text" class="form-control" id="form_user_name" name="form_user_name" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="form_user_email">User email</label>
+							<label class="control-label col-sm-3" for="form_user_email">Email</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" id="form_user_email"name="form_user_email">
+								<input type="email" class="form-control" id="form_user_email"name="form_user_email" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="form_user_phone">User phone</label>
+							<label class="control-label col-sm-3" for="form_user_phone">Phone</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="form_user_phone" name="form_user_phone">
+								<input type="text" class="form-control" id="form_user_phone" name="form_user_phone" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="product_quantity">Product quantity</label>
+							<label class="control-label col-sm-3" for="product_quantity">Product Quantity</label>
 							<div class="col-sm-9">
-								<input type="number" class="form-control" name="product_quantity" id="product_quantity">
+								<input type="number" class="form-control" name="product_quantity" id="product_quantity" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="country">country</label>
+							<label class="control-label col-sm-3" for="country">Country</label>
 							<div class="col-sm-9">
-								<input type="text" name="country" class="form-control" id="country" value="Bangladesh">
+								<input type="text" name="country" class="form-control" id="country" value="Bangladesh" required>
 							</div>
 						</div>
 
