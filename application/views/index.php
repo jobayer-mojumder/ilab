@@ -19,7 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/img/abelpro-bold.otf">
 
 	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/blocks.css">
@@ -81,20 +80,13 @@
 	<!--=== End Header ===-->
 
 	<!-- Promo block BEGIN -->
-	<section class="promo-section" id="intro" style="background-image: url('./assets/img/bg-img.jpg'); height: 100%; width: 100%;" class="img-responsive">
-		<!-- Fullscreen Static Image BEGIN -->
-		<div class="fullscreen-static-image fullheight">
-			<!-- Promo Content BEGIN -->
-			<div class="container valign__middle">
-				<div class="row">
-					<div class="col-sm-12 text-center-xs g-heading-v7 text-center">
-						<h1 class="" style="font-family: comic sans MS; color: white;">Welcome to the World of Innovation.</h1>
-					</div>
-				</div>
-			</div>
-			<!-- Promo Content END -->
+	<section class="promo-section" id="intro" style="height: 450px;">
+		<div class="breadcrumbs-v3 img-v3 text-center">
+			<div class="container">
+				<h1>Unify is a clean and fully responsive</h1>
+				<p>Discover more about us</p>
+			</div><!--/end container-->
 		</div>
-		<!-- Fullscreen Static Image END -->
 	</section>
 	<!-- Promo block END -->
 
@@ -179,29 +171,35 @@
 
 					<div class="slideshow-container">
 
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/ambulance.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/blindstick.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/blindstick (1).jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/infant-incubator.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/fuel_from_poly_plastic-01.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/green fertilizer-01.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/power_tiller.jpg" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-							<img src="<?=base_url()?>assets/img/solar_wheelchair.jpg" style="width:100%">
+						<div class="shadow-wrapper margin-bottom-10">
+							<div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel">
+								<ol class="carousel-indicators">
+									<li class="rounded-x active" data-target="#myCarousel" data-slide-to="0" ></li>
+									<li class="rounded-x" data-target="#myCarousel" data-slide-to="1"></li>
+									<li class="rounded-x" data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-seo.jpg" alt="">
+									</div>
+									<div class="item">
+										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-web-design.jpg" alt="">
+									</div>
+									<div class="item">
+										<img class="img-responsive" src="http://www.webyogi.com/images/custom/slider-web-design.jpg" alt="">
+									</div>
+								</div>
+
+								<div class="carousel-arrow">
+									<a data-slide="prev" href="#myCarousel" class="left carousel-control">
+										<i class="fa fa-angle-left"></i>
+									</a>
+									<a data-slide="next" href="#myCarousel" class="right carousel-control">
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<br>
@@ -361,7 +359,6 @@
 		<script src="<?=base_url()?>assets/css/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 		<script src="<?=base_url()?>assets/css/plugins/modernizr.js"></script>
 		<script src="<?=base_url()?>assets/css/plugins/backstretch/jquery.backstretch.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&amp;callback=initMap" async defer></script><script src="<?=base_url()?>assets/js/plugins/gmaps-ini.js"></script>
 
 		<!-- JS Page Level-->
 		<script src="<?=base_url()?>assets/js/one.app.js"></script>

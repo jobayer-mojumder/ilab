@@ -110,119 +110,118 @@
 					<a href="#" class="btn btn-info pull-left" data-toggle="modal" data-target="#myModal">Adopt</a>
 				</div>
 				<div class="col-md-12" style="text-align: center; margin-top: 20px;">
-					<video width="520" height="340" controls>
-						<source src="<?=$results->product_video?>" type="video/mp4">
-						</video>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="fa fa-times"></i></button>
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-body" style="background-color: white; padding: 20px;">
-						<div class="modal-bot g-heading-v7">
-							<h3 class="g-color-black" style="margin-bottom: 0px;"><?=$results->product_name?></h3>
-						</div>
-
-						<form class="form-horizontal" method="post" action="<?=site_url('home/order_submit')?>">
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input type="hidden"  class="form-control" id="product_id" name="product_id" value="<?=$results->product_id?>">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="form_user_name">User name</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="form_user_name" name="form_user_name">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="form_user_email">User email</label>
-								<div class="col-sm-9">
-									<input type="email" class="form-control" id="form_user_email"name="form_user_email">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="form_user_phone">User phone</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="form_user_phone" name="form_user_phone">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="product_quantity">Product quantity</label>
-								<div class="col-sm-9">
-									<input type="number" class="form-control" name="product_quantity" id="product_quantity">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="country">country</label>
-								<div class="col-sm-9">
-									<input type="text" name="country" class="form-control" id="country" value="Bangladesh">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-sm-3" for="form_comment">Comment</label>
-								<div class="col-sm-9">
-									<textarea type="text" class="form-control" id="form_comment" name="form_comment"></textarea>
-								</div>
-							</div>
-							<div class="form-group"> 
-								<div class="col-sm-offset-3 col-sm-9">
-									<button type="submit" class="btn btn-info">Submit</button>
-								</div>
-							</div>
-						</form>
-
-						<div class="modal-footer">
-							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-						</div>
-					</div>
+					<iframe width="500" height="300"src="<?=$results->product_video?>"></iframe>
 
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="fa fa-times"></i></button>
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body" style="background-color: white; padding: 20px;">
+					<div class="modal-bot g-heading-v7">
+						<h3 class="g-color-black" style="margin-bottom: 0px;"><?=$results->product_name?></h3>
+					</div>
+
+					<form class="form-horizontal" method="post" action="<?=site_url('home/order_submit')?>">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="hidden"  class="form-control" id="product_id" name="product_id" value="<?=$results->product_id?>">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="form_user_name">User name</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="form_user_name" name="form_user_name">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="form_user_email">User email</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="form_user_email"name="form_user_email">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="form_user_phone">User phone</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="form_user_phone" name="form_user_phone">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="product_quantity">Product quantity</label>
+							<div class="col-sm-9">
+								<input type="number" class="form-control" name="product_quantity" id="product_quantity">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="country">country</label>
+							<div class="col-sm-9">
+								<input type="text" name="country" class="form-control" id="country" value="Bangladesh">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="form_comment">Comment</label>
+							<div class="col-sm-9">
+								<textarea type="text" class="form-control" id="form_comment" name="form_comment"></textarea>
+							</div>
+						</div>
+						<div class="form-group"> 
+							<div class="col-sm-offset-3 col-sm-9">
+								<button type="submit" class="btn btn-info">Submit</button>
+							</div>
+						</div>
+					</form>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</div>
+</div>
 
 
-	<!-- JS Global Compulsory -->
-	<script src="<?=base_url()?>assets/css/plugins/jquery/jquery.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/jquery/jquery-migrate.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Global Compulsory -->
+<script src="<?=base_url()?>assets/css/plugins/jquery/jquery.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/jquery/jquery-migrate.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- JS Implementing Plugins -->
-	<script src="<?=base_url()?>assets/css/plugins/smoothScroll.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/jquery.easing.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/pace/pace.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/owl-carousel2/owl.carousel.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/modernizr.js"></script>
-	<script src="<?=base_url()?>assets/css/plugins/backstretch/jquery.backstretch.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&amp;callback=initMap" async defer></script><script src="<?=base_url()?>assets/js/plugins/gmaps-ini.js"></script>
+<!-- JS Implementing Plugins -->
+<script src="<?=base_url()?>assets/css/plugins/smoothScroll.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/jquery.easing.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/pace/pace.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/modernizr.js"></script>
+<script src="<?=base_url()?>assets/css/plugins/backstretch/jquery.backstretch.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&amp;callback=initMap" async defer></script><script src="<?=base_url()?>assets/js/plugins/gmaps-ini.js"></script>
 
-	<!-- JS Page Level-->
-	<script src="<?=base_url()?>assets/js/one.app.js"></script>
-	<script src="<?=base_url()?>assets/js/plugins/pace-loader.js"></script>
-	<script src="<?=base_url()?>assets/js/plugins/owl-carousel2.js"></script>
-	<script src="<?=base_url()?>assets/js/plugins/cube-portfolio-lightbox.js"></script>
-	<script src="<?=base_url()?>assets/js/plugins/promo.js"></script>
-	<script src="<?=base_url()?>assets/js/forms/contact.js"></script>
-	<script>
-		$(function() {
-			App.init();
-			OwlCarousel.initOwlCarousel();
-			ContactForm.initContactForm();
-		});
-	</script>
+<!-- JS Page Level-->
+<script src="<?=base_url()?>assets/js/one.app.js"></script>
+<script src="<?=base_url()?>assets/js/plugins/pace-loader.js"></script>
+<script src="<?=base_url()?>assets/js/plugins/owl-carousel2.js"></script>
+<script src="<?=base_url()?>assets/js/plugins/cube-portfolio-lightbox.js"></script>
+<script src="<?=base_url()?>assets/js/plugins/promo.js"></script>
+<script src="<?=base_url()?>assets/js/forms/contact.js"></script>
+<script>
+	$(function() {
+		App.init();
+		OwlCarousel.initOwlCarousel();
+		ContactForm.initContactForm();
+	});
+</script>
 </body>
 </html>
