@@ -28,6 +28,8 @@
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/footers/footer-v7.css">
 
 	<!-- CSS Implementing Plugins -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/animate.css">
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/line-icons.css">
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/plugins/font-awesome/css/font-awesome.min.css">
@@ -180,7 +182,7 @@
 					<div class="slideshow-container">
 
 						<div class="shadow-wrapper margin-bottom-10">
-							<div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel">
+							<div class="carousel slide carousel-v1 box-shadow shadow-effect-2" id="myCarousel" >
 								<ol class="carousel-indicators">
 									<li class="rounded-x active" data-target="#myCarousel" data-slide-to="0" ></li>
 									<li class="rounded-x" data-target="#myCarousel" data-slide-to="1"></li>
@@ -188,7 +190,7 @@
 									<li class="rounded-x" data-target="#myCarousel" data-slide-to="3"></li>
 								</ol>
 
-								<div class="carousel-inner">
+								<div class="carousel-inner" data-ride="carousel" data-interval="2000">
 									<div class="item active">
 										<img class="img-responsive" src="<?=base_url()?>assets/img/ambulanceSS.jpg" alt="">
 									</div>
@@ -385,57 +387,37 @@
 				App.init();
 				OwlCarousel.initOwlCarousel();
 				ContactForm.initContactForm();
-				changeProduct('Education');
+				changeProduct('Health');
 			});
+		</script>
 
-			var slideIndex = 0;
-			showSlides();
+		<script >
+			function changeProduct(category){
+				console.log(category);
+				$('#category_name').html(category);;
+				if (category) {
+					$.ajax({
+						url : "<?=site_url('home/load_product');?>",
+						method: 'post',
+						data: {"category": category},            
+						success : function(response){
+							if (response != 0) {
+								$('#products_list').html(response);
 
-			function showSlides() {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("dot");
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) {slideIndex = 1}    
-					for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
-					}
-					slides[slideIndex-1].style.display = "block";  
-					dots[slideIndex-1].className += " active";
-					setTimeout(showSlides, 1000);
-				}
-			</script>
-
-			<script >
-				function changeProduct(category){
-					console.log(category);
-					$('#category_name').html(category);;
-					if (category) {
-						$.ajax({
-							url : "<?=site_url('home/load_product');?>",
-							method: 'post',
-							data: {"category": category},            
-							success : function(response){
-								if (response != 0) {
-									$('#products_list').html(response);
-
-								}else{
-									$('#products_list').html('');
+							}else{
+								$('#products_list').html('');
 								//alert('Something went wrong!');
 							}
 
 						}  
 					});
-					}
-					else{
-						alert('Something went wrong!');
-					}
-
 				}
-			</script>
+				else{
+					alert('Something went wrong!');
+				}
 
-		</body>
-		</html>
+			}
+		</script>
+
+	</body>
+	</html>

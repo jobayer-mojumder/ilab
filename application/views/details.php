@@ -49,7 +49,7 @@
 	<nav class="one-page-header one-page-header-style-2 navbar navbar-default navbar-fixed-top architecture-nav one-page-nav-scrolling one-page-nav__fixed" role="navigation">
 		<div class="container">
 			<div class="page-scroll">
-				<a class="logo-link navbar-brand logo-left" href="#intro">
+				<a class="logo-link navbar-brand logo-left" href="<?=base_url()?>">
 					<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 					<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 				</a>
@@ -63,7 +63,7 @@
 
 					<div class="col-md-2 no-side-padding">
 						<div class="center-block logo page-scroll">
-							<a class="logo-link navbar-brand logo-centered" href="index.php">
+							<a class="logo-link navbar-brand logo-centered" href="<?=base_url()?>">
 								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 								<img class="shrink-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -5px; padding: 0px;">
 							</a>
@@ -245,7 +245,9 @@
 <script>
 	$(function() {
 		App.init();
-		OwlCarousel.initOwlCarousel();
+		OwlCarousel.initOwlCarousel(
+			autoplay:true,
+			autoplayTimeout:1000,);
 		ContactForm.initContactForm();
 	});
 </script>
