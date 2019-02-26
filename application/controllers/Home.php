@@ -77,7 +77,7 @@ class Home extends CI_Controller {
 			$config = array(
 				'protocol'  => 'smtp',
 				'smtp_host' => 'smtp.gmail.com',
-				'smtp_port' => 465,
+				'smtp_port' => 587,
 				'smtp_user' => 'ekshop.a2i@gmail.com',
 				'smtp_pass' => 'jiisunseerat',
 				'mailtype'  => 'html',
@@ -100,8 +100,8 @@ class Home extends CI_Controller {
 				$this->session->set_flashdata('smsg', 'Please check your email.');
 				redirect('home/details/'.$id);
 			} else {
-				echo $this->email->print_debugger();
-				exit();
+				/*echo $this->email->print_debugger();
+				exit();*/
 				$this->session->set_flashdata('emsg', 'E-mail Does Not Sent');
 				redirect('home/details/'.$id);
 			}
