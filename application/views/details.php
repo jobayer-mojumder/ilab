@@ -42,6 +42,25 @@
 
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/custom.css">
+	<style type="text/css">
+	.back-button {
+		background-color: #e92229;
+		border: none;
+		color: white;
+		padding: 10px 25px;
+		text-align: center;
+		font-size: 14px;
+		margin: 4px 2px;
+		/*opacity: 0.6;
+		transition: 0.3s;*/
+		display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+		/*margin-bottom: 50px;*/
+	}
+
+	.back-button:hover {opacity: 1}
+</style>
 </head>
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
@@ -81,6 +100,11 @@
 
 	<section style="margin-top: 10%;">
 		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="<?=site_url()?>" class="btn btn-info back-button pull-right">Back</a>
+				</div>
+			</div>
 			<?php if($this->session->flashdata('smsg') && $this->session->flashdata('smsg') != ""){ ?>
 				<div class="alert alert-success alert-dismissible">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -205,7 +229,7 @@
 <!-- copyrights -->
 <div class="copyrights container-fluid page-scroll">
 	<div clas="container">
-		<a class="footer-logo" href="#intro">
+		<a class="footer-logo" href="<?=base_url()?>">
 			<img class="img-responsive" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 		</a>
 		<ul class="list-inline footer-list">

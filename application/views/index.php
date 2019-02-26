@@ -99,7 +99,7 @@
 			<!-- all for your comfort blocks -->
 			<div class="row equal-height-columns">
 				<div class="row">
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-1 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/health-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Health</h3>
@@ -107,7 +107,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-2 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/agriculture-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Agriculture</h3>
@@ -115,7 +115,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-3 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/disability-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Disability</h3>
@@ -123,7 +123,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-4 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/environment-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Environment</h3>
@@ -133,7 +133,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-1 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/ekshop-logo.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Ek-Shop</h3>
@@ -141,7 +141,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-3 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/education-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Education</h3>
@@ -149,7 +149,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-2 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/industry-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Industry</h3>
@@ -157,7 +157,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 com-sm-6 col-xs-6 arch-service">
+					<div class="col-md-3 col-sm-6 col-xs-6 arch-service">
 						<div class="arch-service-in img-hover-1 equal-height-column">
 							<span aria-hidden="true"><img src="<?=base_url()?>assets/img/hill-01.png" style="height: 25%; width: 30%; color: white;" alt="" class="img img-responsive"></span>
 							<h3>Hill Tracts</h3>
