@@ -209,9 +209,9 @@
 			<img class="img-responsive" src="<?=base_url()?>assets/img/logo.png" alt="Logo">
 		</a>
 		<ul class="list-inline footer-list">
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="http://ilab.gov.bd/"><i class="fa fa-globe"></i></a></li>
+			<li><a href="https://www.facebook.com/a2ilab/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UC5zxvzsVFvKfaCpJO66-Hug/featured"><i class="fa fa-youtube"></i></a></li>
 		</ul>
 	</div>
 </div>
