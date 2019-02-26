@@ -77,7 +77,7 @@ class Home extends CI_Controller {
 			$config = array(
 				'protocol'  => 'smtp',
 				'smtp_host' => 'ssl://smtp.gmail.com',
-				'smtp_port' => 465,
+				'smtp_port' => 587,
 				'smtp_user' => 'ekshop.a2i@gmail.com',
 				'smtp_pass' => 'jiisunseerat',
 				'mailtype'  => 'html',
