@@ -56,7 +56,6 @@
 		display: inline-block;
 		text-decoration: none;
 		cursor: pointer;
-		/*margin-bottom: 50px;*/
 	}
 
 	.back-button:hover {opacity: 1}
@@ -100,11 +99,6 @@
 
 	<section style="margin-top: 10%;">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<a href="<?=site_url()?>" class="btn btn-info back-button pull-right">Back</a>
-				</div>
-			</div>
 			<?php if($this->session->flashdata('smsg') && $this->session->flashdata('smsg') != ""){ ?>
 				<div class="alert alert-success alert-dismissible">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -118,7 +112,11 @@
 				</div>		
 			<?php } ?>
 
-
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="<?=site_url()?>" class="btn btn-info back-button pull-right">Back</a>
+				</div>
+			</div>
 
 			<div class="row well">
 				<div class="col-md-4 col-sm-4">
@@ -269,9 +267,7 @@
 <script>
 	$(function() {
 		App.init();
-		OwlCarousel.initOwlCarousel(
-			autoplay:true,
-			autoplayTimeout:1000,);
+		OwlCarousel.initOwlCarousel();
 		ContactForm.initContactForm();
 	});
 </script>

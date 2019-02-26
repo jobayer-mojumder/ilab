@@ -45,7 +45,7 @@
 
 									
 									<div class="form-group">
-										<label for="status" class="col-sm-2 control-label">product_category</label>
+										<label for="status" class="col-sm-2 control-label">Product category</label>
 										<div class="col-sm-2">
 											<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="product_category" id="product_category" required>
 												<option <?php if($results->product_category=='') echo "selected";?> value="">Select</option>
@@ -70,14 +70,14 @@
 									</div>
 
 									<div class="form-group">
-										<label for="product_name" class="col-sm-2 control-label">product_name</label>
+										<label for="product_name" class="col-sm-2 control-label">Product name</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_name" name="product_name" placeholder="product_name Here" required value="<?=$results->product_name?>">
+											<input type="text" class="form-control" id="product_name" name="product_name" placeholder="Product name Here" required value="<?=$results->product_name?>">
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label for="product_description" class="col-sm-2 control-label">product_description</label>
+										<label for="product_description" class="col-sm-2 control-label">Product description</label>
 										<div class="col-sm-9">
 											<textarea type="text" class="form-control" id="product_description" name="product_description"><?=$results->product_description?></textarea>
 										</div>
@@ -108,22 +108,22 @@
 									</div>
 
 									<div class="form-group">
-										<label for="product_video" class="col-sm-2 control-label">product_video</label>
+										<label for="product_video" class="col-sm-2 control-label">Product video</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_video" name="product_video" placeholder="product_video Here" required value="<?=$results->product_video?>">
+											<input type="text" class="form-control" id="product_video" name="product_video" placeholder="Product video Here" value="<?=$results->product_video?>">
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label for="product_innovator_name" class="col-sm-2 control-label">product_innovator_name</label>
+										<label for="product_innovator_name" class="col-sm-2 control-label">Product innovator name</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_innovator_name" name="product_innovator_name" placeholder="product_innovator_name Here" required value="<?=$results->product_innovator_name?>">
+											<input type="text" class="form-control" id="product_innovator_name" name="product_innovator_name" placeholder="Product innovator_name Here" required value="<?=$results->product_innovator_name?>">
 										</div>
 									</div>
 
 									
                                     <div class="form-group">
-										<label for="image" class="col-sm-2 control-label">product_innovator_image</label>
+										<label for="image" class="col-sm-2 control-label">Product innovator image</label>
 										<div class="col-sm-4">
 											<input type="file" class="form-control" id="image3" name="image3" >
 											<?php if($results->product_innovator_image){?>
@@ -135,16 +135,16 @@
 									</div>
 
 									<div class="form-group">
-										<label for="product_cost_tk" class="col-sm-2 control-label">product_cost_tk</label>
+										<label for="product_cost_tk" class="col-sm-2 control-label">Product cost (tk)</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_cost_tk" name="product_cost_tk" placeholder="product_cost_tk Here" required value="<?=$results->product_cost_tk?>">
+											<input type="text" class="form-control" id="product_cost_tk" name="product_cost_tk" placeholder="Product cost in tk Here" required value="<?=$results->product_cost_tk?>">
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label for="product_cost_tk" class="col-sm-2 control-label">product_cost_doller</label>
+										<label for="product_cost_tk" class="col-sm-2 control-label">Product cost (Dollar)</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_cost_doller" name="product_cost_doller" placeholder="product_cost_doller Here" required value="<?=$results->product_cost_doller?>">
+											<input type="text" class="form-control" id="product_cost_doller" name="product_cost_doller" placeholder="Product cost in dollar Here" required value="<?=$results->product_cost_doller?>">
 										</div>
 									</div>
 									
