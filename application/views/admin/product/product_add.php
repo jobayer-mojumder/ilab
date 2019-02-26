@@ -91,7 +91,7 @@
 									<div class="form-group">
 										<label for="product_video" class="col-sm-2 control-label">product_video</label>
 										<div class="col-sm-9">
-											<input type="text" class="form-control" id="product_video" name="product_video" placeholder="product_video Here" required value="">
+											<input type="text" class="form-control" id="product_video" name="product_video" placeholder="product_video Here" value="">
 										</div>
 									</div>
 
