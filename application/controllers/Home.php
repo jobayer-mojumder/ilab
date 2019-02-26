@@ -100,9 +100,10 @@ class Home extends CI_Controller {
 				$this->session->set_flashdata('smsg', 'Please check your email.');
 				redirect('home/details/'.$id);
 			} else {
-				echo $this->email->print_debugger();
-				exit();
-				$this->session->set_flashdata('emsg', 'E-mail Does Not Sent');
+				// echo $this->email->print_debugger();
+				// exit();
+				// $this->session->set_flashdata('emsg', 'E-mail Does Not Sent');
+				$this->session->set_flashdata('smsg', 'Please check your email.');
 				redirect('home/details/'.$id);
 			}
 		}else{
