@@ -33,7 +33,7 @@ class Home extends CI_Controller {
 			$html .= '<div class="col-md-3 col-sm-6">
 			<div class="card">
 			<img src="'.base_url($r->path.$r->product_image1).'" alt="Ambulance" style="width:100%">
-			<h1>'.$r->product_name.'</h1>
+			<h1 style="font-size: 1.5em;">'.$r->product_name.'</h1>
 			<p class="price">'.$r->product_cost_tk.'tk ($'.$r->product_cost_doller.')</p>
 			<p><a href="'.site_url("home/details/".$r->product_id).'"><button>Details</button></a></p>
 			</div> 
