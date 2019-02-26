@@ -30,7 +30,7 @@ class Home extends CI_Controller {
 		$results = $this->Home_model->get_product_by_category($category);
 		$html = '';
 		foreach ($results as $r) {
-			$html .= '<div class="col-md-3">
+			$html .= '<div class="col-md-3 col-sm-6">
 			<div class="card">
 			<img src="'.base_url($r->path.$r->product_image1).'" alt="Ambulance" style="width:100%">
 			<h1>'.$r->product_name.'</h1>
