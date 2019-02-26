@@ -347,7 +347,7 @@
 			<!-- copyrights -->
 			<div class="copyrights container-fluid page-scroll">
 				<div clas="container">
-					<a class="footer-logo" href="#intro">
+					<a class="footer-logo" href="<?=site_url()?>">
 						<img class="img-responsive" src="assets/img/logo.png" alt="Logo">
 					</a>
 					<ul class="list-inline footer-list">
