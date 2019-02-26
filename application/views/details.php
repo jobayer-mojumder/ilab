@@ -115,7 +115,7 @@
 				<div class="col-md-7 col-sm-7">
 					<div class="col-md-12" style="text-align: center; margin-top: 20px;">
 						<!-- <p><b>Product Video</b></p> -->
-						<iframe width="600" height="300"src="<?=$results->product_video?>"></iframe>
+						<iframe width="100%" height="300"src="<?=$results->product_video?>"></iframe>
 					</div>
 				</div>
 

@@ -58,11 +58,8 @@
 
 			<div class="container no-padding-left ">
 				<div class="row collapse navbar-collapse navbar-ex1-collapse">
-					<div class="col-md-5 no-side-padding">
-						
-					</div>
 
-					<div class="col-md-2 no-side-padding">
+					<div class="col-md-2 no-side-padding col-md-offset-5">
 						<div class="center-block logo page-scroll">
 							<a class="logo-link navbar-brand logo-centered" href="<?=site_url()?>">
 								<img class="default-logo" src="<?=base_url()?>assets/img/logo.png" alt="Logo" style="margin: -10px; padding: 0px;">
